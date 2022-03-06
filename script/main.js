@@ -20,7 +20,7 @@
 		puzzlePaths.forEach((img, index) => {
 			puzzlePieces[index].src = `images/${img + this.dataset.bgref}.jpg`;
 		});
-		//update each images's src one at a time)
+		//update each images's src one at a time
 	}
 
 
@@ -42,10 +42,14 @@
 		event.preventDefault();
 		console.log('dropped on me');
 
+		if (this.childElementCount == 1){
+			return;
+		}
 		//retrieve the dragged element using the dataTranfer object
 		//this was set in the drag event using the setData method
 		let droppedEl = event.dataTransfer.getData('currentItem');
 		console.log(droppedEl);
+
 
 		// move the dragged element into the current drop zone
 		// appendChild is a bulit-in JS function that adds an element to another as a child
