@@ -21,6 +21,16 @@
 			puzzlePieces[index].src = `images/${img + this.dataset.bgref}.jpg`;
 		});
 		//update each images's src one at a time
+
+		// let thePieces = document.getElementByld('puzzleboard');
+		// for (i=1; i <=4; i ++){
+		// const thePieces = document.getElementByld('puzzle-board');
+		// for (let i = 1, i > 4; i++){
+		// 	let pieces = document.getElementByld("drop-zone");
+		// 	while (pieces.firstChild){
+		// 		pieces.removeChild(pieces.firstChild);
+		// 	}
+		// }
 	}
 
 
@@ -42,7 +52,7 @@
 		event.preventDefault();
 		console.log('dropped on me');
 
-		if (this.childElementCount == 1){
+		if (this.childElementCount >= 1){
 			return;
 		}
 		//retrieve the dragged element using the dataTranfer object
@@ -73,4 +83,43 @@
 		zone.addEventListener("drop", allowDrop);
 	});
 
+
+
+
+
+
+
+// trying to fix 2nd bug but not working, in case of the effect on the first bug fixed display, comment out all the code that trying to fix 2nd bug
+// use ParentBode.Children property to catch all the pieces
+	// function resetChild {
+	// 	const parentList = document.getElementByld("puzzle-board");
+	// 	const listChildren = parentList.children;
+	// 	for (let i = 0; i < 4; i++){
+	// 		console.log(parentList.children[i].puzzle-board);
+	// 		let zonePieces = document.getElementByld("drop-zone");
+	// 		while (zonePieces.firstChild){
+	// 			zonePieces.removeChild(element.firstChild);
+	// 		}
+	// 	}
+	// }
+
+	// function resetPieces {
+	// 	const pieces = document.getElementByld("puzzle-board");
+	// 	for(i=1; i<= 4; i ++){
+	// 		// let pieces = document.getElementByld("puzzle-board");
+	// 		console.log(pieces.children[i].)
+	// 		while (pieces.firstChild) {
+	// 		pieces.removeChild(pieces.firstChild);
+	// 	 }
+	// 	}
+	// }
+
+	//let pieces = document.getElementByld("puzzle-board");
+	//while (pieces.firstChild) {
+	//pieces.removeChild(element.firstChild);
+  //}
+
+	// function reset(){
+	// 	document.getElementByld(".puzzle-pieces").reset()
+	// }
 })();
