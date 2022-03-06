@@ -10,7 +10,7 @@ All you need is web boswer to play.
 Use the puzzle thumbnails listed below to select the puzzle you want. Drag the scattered pieces on the left to the area on the right to complete the puzzle.
 
 ### Usage
-Clone the project, <code>cd</code> to your directory/download, and run the game.py file in a Python 3 shell (Terminal on a mac / Linux, Windows command prompt).
+Clone the project, <code>cd</code> to your directory/download, and run the HTML file in a browser.
 
 Enjoy!
 
