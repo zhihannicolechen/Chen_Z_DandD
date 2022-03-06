@@ -5,7 +5,7 @@ Pick your weapon and play against the computer - you'll only get a virtual sting
 
 ### Prerequisites
 
-All you need is <a href="https://www.python.org/" target="_blank">web boswer</a> to play.
+All you need is web boswer to play.
 
 Use the puzzle thumbnails listed below to select the puzzle you want. Drag the scattered pieces on the left to the area on the right to complete the puzzle.
 
